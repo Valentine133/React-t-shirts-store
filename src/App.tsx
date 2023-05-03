@@ -11,7 +11,7 @@ import './scss/app.scss';
 function App() {
   
   return (
-    <Router>
+    <Router basename="/React-t-shirts-store">
       <div className="App">
         <Routes>
          <Route path="/" element={<MainLayout/>}>
