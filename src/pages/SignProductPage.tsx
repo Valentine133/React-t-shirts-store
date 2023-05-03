@@ -34,10 +34,10 @@ const SignProductPage: React.FC = () => {
     <>
       <img src={product.imageUrl} alt={product.title} />
       <h1>{product.title}</h1>
-      <div>{product.price}</div>
+      <div>{product.price} €</div>
       <Link to="/">
         <button className="button button--outline button--add">
-          <span>Назад</span>
+          <span>Back</span>
         </button>
       </Link>
     </>

@@ -1,15 +1,13 @@
 import { useCallback, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { setCategoryId, setCurrentPage  } from '../redux/slices/filterSlice';
-import Categories from '../components/Categories';
-import Sort from '../components/Sort';
-import ProductCard from '../components/productCard/ProductCard';
-import Skeleton from '../components/productCard/Skeleton';
-import Pagination from '../components/Pagination';
 import { fetchProducts, selectProducts } from '../redux/slices/productsSlice';
 import { selectFilter } from '../redux/slices/filterSlice';
 import { useAppDispatch } from '../redux/store';
+
+import { Categories, Sort, ProductCard, Skeleton, Pagination } from '../components';
+
 
 const MainPage: React.FC = () => {
   const dispatch = useAppDispatch();
