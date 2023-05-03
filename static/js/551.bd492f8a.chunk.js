@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[551],{9551:function(n,a,e){e.d(a,{Z:function(){return u}});e(2791);var s=e.p+"static/media/404.647d1271f0df28e8a12da0add2a06085.svg",t="NotFound_root__HUMbi",d=e(184),u=function(){return(0,d.jsxs)("div",{className:t,children:[(0,d.jsx)("img",{src:s,alt:"404 page not found"}),(0,d.jsx)("h1",{children:"404 Page not found"})]})}}}]);
+//# sourceMappingURL=551.bd492f8a.chunk.js.map
