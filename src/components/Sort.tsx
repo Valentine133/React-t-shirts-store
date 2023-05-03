@@ -1,29 +1,34 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, memo } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setSort, selectSort } from '../redux/slices/filterSlice';
 
-export const listPopup = [
+type SortListItem = {
+  name: string;
+  sortProperty: 'rating' | 'price' | '-price' | 'title';
+};
+
+export const listPopup: SortListItem[] = [
   { name: 'popularity', sortProperty: 'rating'}, 
   { name: 'price (desc)', sortProperty: 'price'}, 
   { name: 'price (asc)', sortProperty: '-price'}, 
   { name: 'title', sortProperty: 'title'}
 ];
 
-function Sort() {
+const Sort: React.FC = memo(() => {
   const dispatch = useDispatch();
   const sort = useSelector(selectSort);
-  const sortRef = useRef();
+  const sortRef = useRef<HTMLDivElement>(null);
 
   const [open, setOpen] = useState(false);
 
-  const onClickListPopup = (obj) => {
+  const onClickListPopup = (obj: SortListItem) => {
     dispatch(setSort(obj));
     setOpen(false);
   };
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (!event.composedPath().includes(sortRef.current)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (sortRef.current && !event.composedPath().includes(sortRef.current)) {
         setOpen(false);
       }
     }
@@ -69,6 +74,6 @@ function Sort() {
       )}
     </div>
   ) 
-}
+})
 
 export default Sort;

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { setCategoryId, setCurrentPage  } from '../redux/slices/filterSlice';
@@ -9,23 +9,24 @@ import Skeleton from '../components/productCard/Skeleton';
 import Pagination from '../components/Pagination';
 import { fetchProducts, selectProducts } from '../redux/slices/productsSlice';
 import { selectFilter } from '../redux/slices/filterSlice';
+import { useAppDispatch } from '../redux/store';
 
-const MainPage = () => {
-  const dispatch = useDispatch();
+const MainPage: React.FC = () => {
+  const dispatch = useAppDispatch();
   const { categoryId, sort, currentPage, searchValue } = useSelector(selectFilter);
   const { items, status } = useSelector(selectProducts);
   const sortType = sort.sortProperty;
 
-  const onChangeCategory = (id) => {
+  const onChangeCategory = useCallback((id: number) => {
     dispatch(setCategoryId(id));
-  }
+  }, []);
 
-  const onChangePage = (number) => {
-    dispatch(setCurrentPage(number));
+  const onChangePage = (page: number) => {
+    dispatch(setCurrentPage(page));
   }
 
   const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index}/>);
-  const productsFiltered = items.map((item) => <ProductCard key={item.id}  {...item}/>);
+  const productsFiltered = items.map((item: any) => <ProductCard key={item.id}  {...item}/>);
 
   const getProducts = async () => {
 
@@ -34,13 +35,15 @@ const MainPage = () => {
     const categorySort =  categoryId > 0 ? `category=${categoryId}` : '';
     const search = searchValue ? `&search=${searchValue}` : '';
   
-    dispatch(fetchProducts({
-      sortBy,
-      order,
-      categorySort,
-      search,
-      currentPage
-    }))
+    dispatch(
+      fetchProducts({
+        sortBy,
+        order,
+        categorySort,
+        search,
+        currentPage: String(currentPage),
+      })
+    )
 
     window.scrollTo(0, 0);
   }

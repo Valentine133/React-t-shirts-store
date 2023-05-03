@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { memo } from "react";
 
-const Categories = ({ value, onChangeCategory }) => {
+type CategoriesProps = {
+  value: number;
+  onChangeCategory: (i: number) => void;
+}
+
+const categories = ['All', 'Games', 'Movies', 'IT', 'Comics'];
+
+const Categories: React.FC<CategoriesProps> = memo(({ value, onChangeCategory }) => {
 
   // const onChangeCategory = (index) => {
   //   setActiveIndex(index)
   // }
-
-  const categories = ['All', 'Games', 'Movies', 'IT', 'Comics'];
 
   return (
     <div className="categories">
@@ -22,6 +27,6 @@ const Categories = ({ value, onChangeCategory }) => {
       </ul>
     </div>
   )
-}
+})
 
 export default Categories;

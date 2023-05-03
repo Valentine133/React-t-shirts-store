@@ -1,4 +1,5 @@
 
+import React, { useEffect } from 'react';
 import {Link} from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -10,7 +11,12 @@ import logoSvg from '../assets/img/logo.svg';
 function Header() {
   const {items, totalPrice} = useSelector(selectCart);
 
-  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
+  const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
+
+  useEffect(() => {
+    const json = JSON.stringify(items);
+    localStorage.setItem('cart', json);
+  }, [items]);
 
   return (
     <header className="header">
