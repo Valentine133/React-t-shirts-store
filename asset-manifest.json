@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/React-t-shirts-store/static/css/main.15798b69.css",
-    "main.js": "/React-t-shirts-store/static/js/main.610e9ad3.js",
-    "Cart.js": "/React-t-shirts-store/static/js/Cart.99091692.chunk.js",
+    "main.css": "/React-t-shirts-store/static/css/main.89bcab36.css",
+    "main.js": "/React-t-shirts-store/static/js/main.ebe7b75d.js",
+    "Cart.js": "/React-t-shirts-store/static/js/Cart.3cd26119.chunk.js",
     "MainPage.css": "/React-t-shirts-store/static/css/MainPage.983e76ed.chunk.css",
-    "MainPage.js": "/React-t-shirts-store/static/js/MainPage.b33f31fe.chunk.js",
+    "MainPage.js": "/React-t-shirts-store/static/js/MainPage.ee2faf6b.chunk.js",
     "NotFound.css": "/React-t-shirts-store/static/css/NotFound.983e76ed.chunk.css",
     "NotFound.js": "/React-t-shirts-store/static/js/NotFound.7a2ba976.chunk.js",
     "SignProductPage.js": "/React-t-shirts-store/static/js/SignProductPage.3e7b14b9.chunk.js",
+    "static/js/185.489d1383.chunk.js": "/React-t-shirts-store/static/js/185.489d1383.chunk.js",
     "static/js/551.bd492f8a.chunk.js": "/React-t-shirts-store/static/js/551.bd492f8a.chunk.js",
     "static/media/404.svg": "/React-t-shirts-store/static/media/404.647d1271f0df28e8a12da0add2a06085.svg",
-    "static/media/logo.svg": "/React-t-shirts-store/static/media/logo.545242dfa75b7007b6fde5ed85a48557.svg",
+    "static/media/logo.svg": "/React-t-shirts-store/static/media/logo.a9399f6b1cf0355c7fd3129413ee2dbf.svg",
     "index.html": "/React-t-shirts-store/index.html",
-    "main.15798b69.css.map": "/React-t-shirts-store/static/css/main.15798b69.css.map",
-    "main.610e9ad3.js.map": "/React-t-shirts-store/static/js/main.610e9ad3.js.map",
-    "Cart.99091692.chunk.js.map": "/React-t-shirts-store/static/js/Cart.99091692.chunk.js.map",
+    "main.89bcab36.css.map": "/React-t-shirts-store/static/css/main.89bcab36.css.map",
+    "main.ebe7b75d.js.map": "/React-t-shirts-store/static/js/main.ebe7b75d.js.map",
+    "Cart.3cd26119.chunk.js.map": "/React-t-shirts-store/static/js/Cart.3cd26119.chunk.js.map",
     "MainPage.983e76ed.chunk.css.map": "/React-t-shirts-store/static/css/MainPage.983e76ed.chunk.css.map",
-    "MainPage.b33f31fe.chunk.js.map": "/React-t-shirts-store/static/js/MainPage.b33f31fe.chunk.js.map",
+    "MainPage.ee2faf6b.chunk.js.map": "/React-t-shirts-store/static/js/MainPage.ee2faf6b.chunk.js.map",
     "NotFound.983e76ed.chunk.css.map": "/React-t-shirts-store/static/css/NotFound.983e76ed.chunk.css.map",
     "NotFound.7a2ba976.chunk.js.map": "/React-t-shirts-store/static/js/NotFound.7a2ba976.chunk.js.map",
     "SignProductPage.3e7b14b9.chunk.js.map": "/React-t-shirts-store/static/js/SignProductPage.3e7b14b9.chunk.js.map",
+    "185.489d1383.chunk.js.map": "/React-t-shirts-store/static/js/185.489d1383.chunk.js.map",
     "551.bd492f8a.chunk.js.map": "/React-t-shirts-store/static/js/551.bd492f8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15798b69.css",
-    "static/js/main.610e9ad3.js"
+    "static/css/main.89bcab36.css",
+    "static/js/main.ebe7b75d.js"
   ]
 }
