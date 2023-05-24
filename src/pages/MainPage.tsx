@@ -6,8 +6,9 @@ import { fetchProducts, selectProducts } from '../redux/slices/productsSlice';
 import { selectFilter } from '../redux/slices/filterSlice';
 import { useAppDispatch } from '../redux/store';
 
-import { Categories, Sort, ProductCard, Skeleton, Pagination } from '../components';
+import { Categories, Sort, ProductCard, Skeleton, CustomPagination } from '../components';
 
+import Grid from '@mui/material/Unstable_Grid2'; 
 
 const MainPage: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -62,16 +63,16 @@ const MainPage: React.FC = () => {
             <h2>An error occurred</h2>
           </div>
         ) : (
-          <div className="content__items">
+          <Grid container spacing={2} className="content__items">
             {
               status === 'loading'
               ? skeletons
               : productsFiltered
             }
-          </div>
+          </Grid>
         )}
         
-        <Pagination currentPage={currentPage} onChangePage={onChangePage}/>
+        <CustomPagination currentPage={currentPage} onChangePage={onChangePage}/>
     </>
   )
 }

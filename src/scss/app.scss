@@ -5,16 +5,10 @@
 @import './components/all';
 
 body {
-  background-color: $background;
-}
-
-.wrapper {
-  width: calc(100vw - 100px);
-  height: 100%;
-  background-color: #fff;
-  margin: 50px auto;
-  border-radius: 10px;
-  max-width: 1400px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .content {
@@ -34,6 +28,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 568px) {
+      align-items: flex-start;
+      flex-direction: column;
+    } 
   }
 }
 

@@ -1,5 +1,5 @@
 export { default as NotFound } from './notFound/NotFound';
-export { default as Pagination } from './Pagination';
+export { default as CustomPagination } from './CustomPagination';
 export { default as ProductCard } from './productCard/ProductCard';
 export { default as Skeleton } from './productCard/Skeleton';
 export { default as Search } from './Search';

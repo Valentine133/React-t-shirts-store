@@ -1,23 +1,16 @@
 @import '../variables';
 
 .product {
-  width: 280px;
   text-align: center;
   margin-bottom: 65px;
 
-  &:not(:nth-of-type(4n)) {
-    margin-right: 35px;
-  }
-
   &__image {
     width: 260px;
+    margin-top: 1rem;
   }
 
   &__title {
-    font-size: 20px;
-    font-weight: 900;
-    letter-spacing: 1%;
-    margin-bottom: 20px;
+    font-weight: 700;
   }
 
   &__selector {
@@ -25,9 +18,10 @@
     background-color: #f3f3f3;
     border-radius: 10px;
     flex-direction: column;
-    padding: 6px;
+    padding: 0.5rem;
 
     ul {
+      width: 100%;
       display: flex;
       flex: 1;
 
@@ -42,6 +36,7 @@
         font-weight: 600;
         font-size: 14px;
         @include noselect();
+
         &.active {
           background: #ffffff;
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
@@ -56,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 0.5rem;
   }
 
   &__price {
