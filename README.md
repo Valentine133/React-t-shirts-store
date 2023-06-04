@@ -5,6 +5,7 @@ In this project I mastered:
 - React Router v6
 - Axios + Fetch
 - React Hooks
+- Material UI
 - CSS-Modules / SCSS
 - React Content Loader (Skeleton)
 - React Pagination
