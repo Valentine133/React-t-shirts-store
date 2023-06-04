@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-t-shirts-store/static/css/main.89bcab36.css",
+    "main.css": "/React-t-shirts-store/static/css/main.65e57970.css",
     "main.js": "/React-t-shirts-store/static/js/main.ebe7b75d.js",
     "Cart.js": "/React-t-shirts-store/static/js/Cart.3cd26119.chunk.js",
     "MainPage.css": "/React-t-shirts-store/static/css/MainPage.983e76ed.chunk.css",
@@ -13,7 +13,7 @@
     "static/media/404.svg": "/React-t-shirts-store/static/media/404.647d1271f0df28e8a12da0add2a06085.svg",
     "static/media/logo.svg": "/React-t-shirts-store/static/media/logo.a9399f6b1cf0355c7fd3129413ee2dbf.svg",
     "index.html": "/React-t-shirts-store/index.html",
-    "main.89bcab36.css.map": "/React-t-shirts-store/static/css/main.89bcab36.css.map",
+    "main.65e57970.css.map": "/React-t-shirts-store/static/css/main.65e57970.css.map",
     "main.ebe7b75d.js.map": "/React-t-shirts-store/static/js/main.ebe7b75d.js.map",
     "Cart.3cd26119.chunk.js.map": "/React-t-shirts-store/static/js/Cart.3cd26119.chunk.js.map",
     "MainPage.983e76ed.chunk.css.map": "/React-t-shirts-store/static/css/MainPage.983e76ed.chunk.css.map",
@@ -25,7 +25,7 @@
     "551.bd492f8a.chunk.js.map": "/React-t-shirts-store/static/js/551.bd492f8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89bcab36.css",
+    "static/css/main.65e57970.css",
     "static/js/main.ebe7b75d.js"
   ]
 }
